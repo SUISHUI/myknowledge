@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 记录自己的博客
+subtitle: '学习是心灵的港湾'
+description: '学习才能提升自己好吧'
 keywords:
-author: John Doe
-language: en
+author: hu
+language: zh-CN
 timezone: ''
 
 # URL
@@ -97,9 +97,17 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: fluid
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo:
+    github: https://github.com/SUISHUI/SUISHUI.github.io.git # Git仓库地址，username是Github用户名
+  branch: main # 部署到仓库的master(主)分支
